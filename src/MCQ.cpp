@@ -12,7 +12,6 @@
 MCQ::MCQ( )  //Dflt cstr
 {
 	int k;
-	string* temps;
 
 	for ( int k = 0; k < 5; ++k )
 	{

@@ -7,10 +7,12 @@
 *		Jacob, 08 Sep 16: Created file, defined class
 */
 
+#include "MCQ.h"
+
 #ifndef STORY_H
 #define STORY_H
 
-class Story
+class Story : MCQ
 {
 public:
 

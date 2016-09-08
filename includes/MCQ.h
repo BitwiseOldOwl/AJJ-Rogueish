@@ -7,7 +7,11 @@
 *		Jacob, 07 Sep 16: Created file, defined class
 */
 
+#include <string>
+
 #define ERR    -777
+
+using namespace std;
 
 #ifndef MCQ_H
 #define MCQ_H
@@ -29,7 +33,7 @@ public:
 	string giveAns( string s );
 
 private:
-	string* anls[ 5 ];   //Answer list/array. Needs to be a pointer to a string
+	string anls[ 5 ];   //Answer list/array. Needs to be a pointer to a string
 };
 
 #endif

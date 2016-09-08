@@ -15,10 +15,17 @@
 class Story : MCQ
 {
 public:
-
+	//Dflt Cstr
+	Story( );
+	//Data accessors/mutators
+	string displayText( );
+	void storeChoice( string s );
+	void feedBack( );
 
 private:
-
+	string playerChoice;
+	string ansPrompt;
+	string ansToRet;
 };
 
 #endif

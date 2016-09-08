@@ -11,8 +11,6 @@
 
 #define ERR    -777
 
-using namespace std;
-
 #ifndef MCQ_H
 #define MCQ_H
 

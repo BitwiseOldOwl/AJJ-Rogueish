@@ -17,12 +17,19 @@ public:
 	PC( );
 	//Data accessors/mutators
 	int getCoreStats( );   //Fetches core stat scores
-	int changeStr( );         //This and below for modding core stats
-	int changeCon( );
-	int changeDex( );
-	int changeInt( );
-	int changeWis( );
-	int changeCha( );
+	int changeStr( int val );         //This and below for modding core stats
+	int changeCon( int val );
+	int changeDex( int val );
+	int changeInt( int val );
+	int changeWis( int val );
+	int changeCha( int val );
+
+	int getStr( );   //This and below for checking specific values amongst the core stats
+	int getCon( );
+	int getDex( );
+	int getInt( );
+	int getWis( );
+	int getCha( );
 
 private:
 	int* STR;
@@ -34,7 +41,8 @@ private:
 
 	int* karma;
 
-	string PlayerClass;
+	string playerClass;
+	string playerRace;
 };
 
 #endif

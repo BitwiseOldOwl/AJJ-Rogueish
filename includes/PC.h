@@ -10,19 +10,24 @@
 #ifndef PC_H
 #define PC_H
 
+#include <string>
+#include "../includes/NecessaryIncludes.h"
+
+using namespace std;
+
 class PC  //NEEDS to be dynamic!
 {
 public:
 	//Dflt cstr
 	PC( );
 	//Data accessors/mutators
-	int getCoreStats( );   //Fetches core stat scores
-	int changeStr( int val );         //This and below for modding core stats
-	int changeCon( int val );
-	int changeDex( int val );
-	int changeInt( int val );
-	int changeWis( int val );
-	int changeCha( int val );
+	int* getCoreStats( );   //Fetches core stat scores
+	void changeStr( int val );         //This and below for modding core stats
+	void changeCon( int val );
+	void changeDex( int val );
+	void changeInt( int val );
+	void changeWis( int val );
+	void changeCha( int val );
 
 	int getStr( );   //This and below for checking specific values amongst the core stats
 	int getCon( );
@@ -32,12 +37,9 @@ public:
 	int getCha( );
 
 private:
-	int* STR;
-	int* CON;
-	int* DEX;
-	int* INT;
-	int* WIS;
-	int* CHA;
+	int* stats[ 6 ];  //In order: Str, Con, Dex, Int, Wis, Cha
+	int* health;
+	int* mana;
 
 	int* karma;
 

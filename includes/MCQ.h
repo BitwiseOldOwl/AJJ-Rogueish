@@ -7,14 +7,13 @@
 *		Jacob, 07 Sep 16: Created file, defined class
 */
 
-#include <string>
-
-#define ERR    -777
-
-using namespace std;
-
 #ifndef MCQ_H
 #define MCQ_H
+
+#include <string>
+#include "../includes/NecessaryIncludes.h"
+
+using namespace std;
 
 class MCQ
 {

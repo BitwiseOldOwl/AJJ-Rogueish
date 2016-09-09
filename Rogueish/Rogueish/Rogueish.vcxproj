@@ -111,6 +111,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\includes\MCQ.h" />
+    <ClInclude Include="..\..\includes\NecessaryIncludes.h" />
     <ClInclude Include="..\..\includes\PC.h" />
     <ClInclude Include="..\..\includes\Rogueish.h" />
     <ClInclude Include="..\..\includes\Story.h" />

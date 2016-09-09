@@ -12,4 +12,36 @@
 
 using namespace std;
 
-//Funxn def'ns here TODO
+PC::PC( )
+{
+	int* temp = new int;
+
+	for ( int k = 0; k < 6; ++k )
+	{
+		temp = stats[ k ];
+		*temp = ERR;
+	}
+
+	temp = health;
+	*temp = ERR;
+
+	temp = mana;
+	*temp = ERR;
+
+	delete temp;
+}
+
+int* PC::getCoreStats( )   //Must return a pointer to an int so that we can return the array of stats
+{
+	int toRet[ 6 ];
+	int* temp = new int;
+
+	for ( int k = 0; k < 6; ++k )
+	{
+		temp = stats[ k ];
+		toRet[ k ] = *temp;
+	}
+
+	delete temp;
+	return toRet;
+}

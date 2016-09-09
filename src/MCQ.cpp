@@ -11,8 +11,6 @@
 
 MCQ::MCQ( )  //Dflt cstr
 {
-	int k;
-
 	for ( int k = 0; k < 5; ++k )
 	{
 		anls[ k ] = "Badval";     //Set all vals initially to bad value. The user is screwing up if they access one.

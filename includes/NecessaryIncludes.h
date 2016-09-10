@@ -1,15 +1,18 @@
 /*
 *Name: NecessaryIncludes.h
-*Purpose: A set of definitions/macros/includes/etc. for use in Rogueish
+*Purpose: All the includes for Rogueish, in one convenient place. Also to avoid main.obj errs
 *Date Created: 09 September 2016
 *Last Modified: 09 September 2016
 *Changelog:
-*		Jacob, 07 Sep 16: Created file
+*		Jacob, 09 Sep 16: Created file
 */
 
 #ifndef NECESSARYINCLUDES_H
 #define NECESSARYINCLUDES_H
 
-#define ERR    -1
+#include <iostream>
+#include "../includes/Event.h"
+#include "../includes/Rogueish.h"
+#include "../includes/PlCh.h"
 
 #endif

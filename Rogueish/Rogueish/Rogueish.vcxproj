@@ -110,18 +110,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\includes\MCQ.h" />
+    <ClInclude Include="..\..\includes\Event.h" />
+    <ClInclude Include="..\..\includes\Mcqs.h" />
     <ClInclude Include="..\..\includes\NecessaryIncludes.h" />
-    <ClInclude Include="..\..\includes\PC.h" />
+    <ClInclude Include="..\..\includes\PlCh.h" />
     <ClInclude Include="..\..\includes\Rogueish.h" />
-    <ClInclude Include="..\..\includes\Story.h" />
+    <ClInclude Include="..\..\includes\RogueishMacros.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\Event.cpp" />
     <ClCompile Include="..\..\src\main.cpp" />
-    <ClCompile Include="..\..\src\MCQ.cpp" />
-    <ClCompile Include="..\..\src\PC.cpp" />
+    <ClCompile Include="..\..\src\Mcqs.cpp" />
+    <ClCompile Include="..\..\src\PlCh.cpp" />
     <ClCompile Include="..\..\src\Rogueish.cpp" />
-    <ClCompile Include="..\..\src\Story.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

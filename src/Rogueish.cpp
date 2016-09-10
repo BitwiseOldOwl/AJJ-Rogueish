@@ -7,7 +7,6 @@
 *		Jacob, 08 Sep 16: Created file
 */
 
-#include <iostream>
 #include "../includes/Rogueish.h"  //Must be updated if Rogueish.h loc changes
 
 using namespace std;

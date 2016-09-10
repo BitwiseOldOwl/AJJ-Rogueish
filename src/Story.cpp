@@ -7,7 +7,6 @@
 *		Jacob, 08 Sep 16: Created file, defined class
 */
 
-#include <iostream>
 #include "../includes/Story.h"    //Dir resolution. Must be updated if loc of Story.h changes
 
 using namespace std;

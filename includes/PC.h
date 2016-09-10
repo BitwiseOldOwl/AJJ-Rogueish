@@ -20,7 +20,14 @@ class PC  //NEEDS to be dynamic!
 public:
 	//Dflt cstr
 	PC( );
+	//Dstr
+	~PC( );
 	//Data accessors/mutators
+	void setName( string s );
+	void setRace( string s );
+	void setGender( string s );
+	void setClass( string s );
+
 	int* getCoreStats( );   //Fetches core stat scores
 	void changeStr( int val );         //This and below for modding core stats
 	void changeCon( int val );
@@ -45,6 +52,8 @@ private:
 
 	string playerClass;
 	string playerRace;
+	string playerName;
+	string playerGender;
 };
 
 #endif

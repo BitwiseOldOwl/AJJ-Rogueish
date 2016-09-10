@@ -7,7 +7,7 @@
 *		Jacob, 08 Sep 16: Created file, implemented class
 */
 
-#include <iostream>
+#include "../includes/NecessaryIncludes.h"
 #include "../includes/PC.h"    //Dir resolve. Must be updated if loc of PC.h changes
 
 using namespace std;
@@ -29,6 +29,18 @@ PC::PC( )
 	*temp = ERR;
 
 	delete temp;
+}
+
+PC::~PC( )
+{
+	delete health;
+	delete mana;
+	delete karma;
+
+	for ( int k = 0; k < 6; ++k )
+	{
+		delete stats[ k ];
+	}
 }
 
 int* PC::getCoreStats( )   //Must return a pointer to an int so that we can return the array of stats

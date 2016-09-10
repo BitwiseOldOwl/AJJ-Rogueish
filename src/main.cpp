@@ -10,27 +10,21 @@
 
 #include <iostream>
 #include <string>
-#include "../includes/MCQ.h"   //Directory resolves. Must be changed if loc of ~.h changes
-#include "../includes/PC.h"
-#include "../includes/Story.h"
-#include "../includes/Rogueish.h"
-#include "../src/MCQ.cpp"         //Directory resolves. Must be changed if loc of ~.cpp changes
-#include "../src/PC.cpp"
-#include "../src/Story.cpp"
-#include "../src/Rogueish.cpp"
-#include "../includes/NecessaryIncludes.h"   //Macros and other such def'ns
+#include "../includes/NecessaryIncludes.h"   //NEEDED for class support
 
 
 using namespace std;
 
 int main( )
 {
-	PC* pchar = new PC;
+	PlCh pc;
+	string derps;   //DBGGING KWF
 
 	cout << "\n\nTesting, testing, 1-2-3\n\n";
-	pchar->getCoreStats( );
-	cout << "\n\n";
+	pc.getCoreStats( );
+	cout << "Please insert derps:    ";    //DBGGING KWF + line below
+	cin >> derps;
 
-	delete pchar;
+	//delete pc;
 	return 0;
 }

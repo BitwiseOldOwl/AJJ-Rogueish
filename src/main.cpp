@@ -10,22 +10,23 @@
 
 #include <iostream>
 #include <string>
-#include "../includes/NecessaryIncludes.h"   //NEEDED for class support
+#include "../includes/NecessaryIncludes.h"   //NEEDED FOR EVERYTHING
 
 
 using namespace std;
 
 int main( )
 {
-	//PlCh pc;
+	PlCh pc;
 	string derps;   //DBGGING KWF
 
 	cout << "\n\nTesting, testing, 1-2-3\n\n";
-	//pc.getCoreStats( );
+	pc.changeStr( 9002 );
+	cout << "PlCh.getStr() test\n";
+	pc.getStr( );
 	cout << "Please insert derps:    ";    //DBGGING KWF + line below
 	cin >> derps;
 	cout << "Adam was here\n\n";
-	cin>> derps;
 
 	//delete pc;
 	return 0;

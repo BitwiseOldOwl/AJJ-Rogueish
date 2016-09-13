@@ -19,15 +19,12 @@ class PlCh  //NEEDS to be dynamic!
 public:
 	//Dflt cstr
 	PlCh( );
-	//Dstr
-	~PlCh( );
 	//Data accessors/mutators
 	void setName( string s );
 	void setRace( string s );
 	void setGender( string s );
 	void setClass( string s );
 
-	int* getCoreStats( );   //Fetches core stat scores
 	void changeStr( int val );         //This and below for modding core stats
 	void changeCon( int val );
 	void changeDex( int val );
@@ -43,11 +40,11 @@ public:
 	int getCha( );
 
 private:
-	int* stats[ 6 ];  //In order: Str, Con, Dex, Int, Wis, Cha
-	int* health;
-	int* mana;
+	int stats[ 6 ];  //In order: Str, Con, Dex, Int, Wis, Cha
+	int health;
+	int mana;
 
-	int* karma;
+	int karma;
 
 	string playerClass;
 	string playerRace;

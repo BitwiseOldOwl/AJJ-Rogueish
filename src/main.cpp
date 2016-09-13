@@ -19,14 +19,17 @@ int main( )
 {
 	PlCh pc;
 	string derps;   //DBGGING KWF
+	int temp;
 
 	cout << "\n\nTesting, testing, 1-2-3\n\n";
 	pc.changeStr( 9002 );
 	cout << "PlCh.getStr() test\n";
-	pc.getStr( );
+	temp = pc.getStr( );
+	cout << "\n" << temp << "\n\n";
 	cout << "Please insert derps:    ";    //DBGGING KWF + line below
 	cin >> derps;
-	cout << "Adam was here\n\n";
+	cout << "Adam was here.\n\nDerps again:    ";
+	cin >> derps;
 
 	//delete pc;
 	return 0;
